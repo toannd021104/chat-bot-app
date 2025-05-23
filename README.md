@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+Create a Chat App using AWS Amplify and Cognito (with CI/CD)
+This repository contains the commands and code used in this YouTube video, modified to create a Chat Application instead of a Quiz App.
+Terminal Commands
+Here are the terminal commands in order of appearance of the video.
+bashnpm install -g @aws-amplify/cli
+bashamplify configure
+bashnpx create-react-app <name of your app>
+bashcd <name of your app>
+bashamplify init
+bashamplify add auth
+bashamplify push
+bashnpm install aws-amplify @aws-amplify/ui-react lucide-react
+bashnpm start
+Git Commands for CI/CD
+bashgit init
+bashgit add .
+bashgit commit -m "Initial commit"
+bashgit branch -M main
+bashgit remote add origin <repository URL>
+bashgit push -u origin main
+Code Files
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+App.js: The React application that's configured to use Cognito for authentication
+ChatApp.js: The main Chat component with messaging functionality
+App.css: Styling for the application
 
-## Available Scripts
+Features
 
-In the project directory, you can run:
+🔐 User Authentication with AWS Cognito
+💬 Real-time Chat Interface with message history
+📁 File Upload Support with preview
+🗨️ Multiple Conversations management
+📱 Responsive Design with modern UI
+🚀 CI/CD Ready with AWS Amplify hosting
 
-### `npm start`
+Chat App Functionality
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+User login/logout with AWS Cognito
+Send and receive messages
+File attachment support
+Conversation management (create new, switch between conversations)
+Message timestamps
+Loading states and animations
+Responsive sidebar with user profile
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Getting Started
 
-### `npm test`
+Clone this repository
+Follow the terminal commands above in order
+Configure your AWS credentials during amplify configure
+Customize the chat functionality as needed
+Deploy using amplify add hosting and amplify publish
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Technologies Used
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+React 18
+AWS Amplify
+AWS Cognito
+Lucide React (for icons)
+Tailwind CSS (for styling)
