@@ -1,4 +1,4 @@
-Create a Chat App using AWS Amplify and Cognito (with CI/CD)
+Create a Chat App using AWS Amplify and Cognito
 ============================================================
 
 This repository contains the commands and code used in this [YouTube Video](https://www.youtube.com/watch?v=ma1FA2be8Ac), modified to create a Chat Application instead of a Quiz App.
